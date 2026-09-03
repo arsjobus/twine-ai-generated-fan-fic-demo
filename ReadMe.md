@@ -5,7 +5,7 @@ A Twine 2 + Harlowe visual novel creation kit.
 ## Project Summary
 
 - Engine: Twine 2 (Harlowe 3.x)
-- Local server: `http://127.0.0.1:8080/`
+- Local server: `http://127.0.0.1:8080/` served by running `yarn serve` in separate terminal window
 - Open command: `yarn open --story {story-name}` (requires running http server with `yarn serve` in the background).
 - Build command: `yarn build --story {story-name}`
 - Deployment target: itch.io compatible web package (.zip)

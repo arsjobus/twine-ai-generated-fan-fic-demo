@@ -148,7 +148,12 @@ The image processor automatically resolves story sources the same way as the bui
 
 ## AI Image Generation
 
-From the repository root, activate the Python virtual environment and run:
+Before running the generator, download the required model files and place them in the expected folders:
+
+1. Download the base model `cetusMix_Coda2.safetensors` and place it in `models/`.
+2. Download the Pixel LoRA model (for example `mpixel` / `pixel` trigger) and place it in `lora/`.
+3. The relevant download links are listed in the Resources section at the bottom of this document.
+4. Activate the Python virtual environment from the repo root, then run:
 
 ```bash
 python pytools/gen-art-anime.py "anime portrait of a mysterious manor character" \
@@ -160,8 +165,17 @@ python pytools/gen-art-anime.py "anime portrait of a mysterious manor character"
 ```
 
 The script expects the base model at `models/cetusMix_Coda2.safetensors`. LoRA files are
-looked up in `.lora/` when the prompt contains their trigger word, such as `pixel`,
+looked up in `lora/` when the prompt contains their trigger word, such as `pixel`,
 `vados`, `android 18`, `bulma`, or `sticker`. Missing LoRA files are skipped automatically.
+
+Typical folder layout:
+
+```text
+models/
+  cetusMix_Coda2.safetensors
+lora/
+  mpixel.safetensors
+```
 
 Available options:
 
@@ -202,6 +216,8 @@ Generated images are saved to `output/`.
 
 - The manifest and process documents define the current naming conventions for scenes and assets
 - The project uses `assets/image/` and `assets/music/` as the main runtime asset directories
+- Cetus base model download: https://civitai.com/models/6755/cetus-mix?modelVersionId=48569
+- Pixel LoRA model download: https://civitai.com/models/44960/mpixel
 - Upscale AI Artwork Src Images (HQX algorithm) - https://aifreebox.com/tools/image/enhance
 - Separate vocals from music - https://vocalremover.org/
 - Find royalty free video game music - https://opengameart.org/
@@ -209,6 +225,4 @@ Generated images are saved to `output/`.
 - Free online tool to remove BG from anime - https://huggingface.co/spaces/skytnt/anime-remove-background
 - Free online tool to animate an image with prompt - https://huggingface.co/spaces/kulkas2pintu/wan555
 - Rotate, animate, and clean-up pixel art (sometimes) - https://www.pixellab.ai/
-- Models for Anime Pixel Art generation: https://civitai.com/models/6755/cetus-mix?modelVersionId=48569
-- LoRA for SD1.5 Model to generate decent pixel art - https://civitai.com/models/44960/mpixel
 - Twine-to-JSON converter example that works with Harlowe v3: https://jtschoonhoven.github.io/twine-to-json/

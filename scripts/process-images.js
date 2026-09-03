@@ -141,7 +141,7 @@ async function processImages() {
 
     try {
       // Run pixel.py with --single --c 64 --outline
-      const command = `python pytools/pixel.py "${imagePath}" --c 64 --dither-type none --width 256 --height 256`;
+      const command = `python pytools/pixel.py "${imagePath}" --c 64 --dither-type none --width 256 --height 256 --remove-bg --outline`;
       execSync(command, { stdio: 'inherit', cwd: ROOT });
 
       // pixel.py outputs to same directory as input with _64c suffix

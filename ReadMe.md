@@ -114,7 +114,7 @@ yarn process-images --story ashcroft-manor
 This command:
 - Finds all images in `stories/{story-name}/assets/image/src/`
 - **Skips background images by default** (files/directories containing "background")
-- Processes character and other images with `pytools/pixel.py -c 64 --remove-bg --outline`
+- Processes character and other images with `python pytools/pixel.py -c 64 --remove-bg --outline`
 - Outputs processed images to `stories/{story-name}/assets/image/src/processed/`
 - **Converts all output to PNG format** (`.png` extension)
 - Creates output directories as needed

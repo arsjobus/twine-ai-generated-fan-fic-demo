@@ -27,8 +27,6 @@ A Twine 2 + Harlowe visual novel creation kit.
 5) Install Python deps: `pip install -r requirements.txt`
 6) Can proceed to use most commands specified in remainder of this readme.md doc.
 
-Note: pytools/gen-art-anime.py requires the ./models folder to contain the cetus-mix safetensor model, but remember that checkpoint model cannot be used to generate images for commercial purposes!
-
 ## Folder Structure
 
 - `input/**/*` - folder not committed to repo

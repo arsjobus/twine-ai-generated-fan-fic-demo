@@ -1,4 +1,4 @@
-# Twine AI Generated Fan Fic
+# Twine AI Generated Fan Fic Demo
 
 A Twine 2 + Harlowe visual novel creation kit.
 
@@ -10,10 +10,26 @@ A Twine 2 + Harlowe visual novel creation kit.
 - Build command: `yarn build --story {story-name}`
 - Deployment target: itch.io compatible web package (.zip)
 
+## Requirements
+
+- Python 3
+- Node v26
+
+## Quick Start
+
+1) Install Yarn (npm install yarn -g)
+2) Install node deps: `yarn install`
+3) Make Python venv: `python -m venv .venv`
+4) Activate Python venv: `. .venv/bin/activate`
+5) Install Python deps: `pip install -r requirements.txt`
+6) Can proceed to use most commands specified in remainder of this readme.md doc.
+
 ## Folder Structure
 
 - `input/**/*` - folder not committed to repo
 - `output/**/*` - folder not committed to repo
+- `lora/**/*` - recommend to keep lora safetensor files in this location
+- `models/**/*` - recommend to keep model safetensor files in this location
 - `stories/{story-name}` - directory to keep the .html story and the assets. ex. `stories/ashcroft-manor`
 - `stories/{story-name}/{story-name}.html` - Twine story export
 - `stories/{story-name}/assets/image` - game art and background image assets
@@ -21,13 +37,12 @@ A Twine 2 + Harlowe visual novel creation kit.
 - `stories/{story-name}/pitch/rough-draft` - VN story pitches (rough draft)
 - `stories/{story-name}/pitch/final-draft` - VN story pitches (final draft)
 - `pitch/` - keep pitches for the stories generated within here
-- `prompts/` — prompt references and asset generation text
-- `scripts/` — build tooling
+- `scripts/` — build tools
 - `build/` — temporary build output
 - `dist/` — packaged distribution assets
-- `tools/` - python scripts and tools for image manipulation
+- `pytools/` - python scripts and tools for image manipulation
 - `workflow/` - AI Generation workflow pipeline as ordered .md files
-- `how-to-prompt-better-vn-story.md` - Instructions and tips to prompt AI to generate a unique story rich visual novel game
+- `docs/how-to-prompt-better-vn-story.md` - Instructions and tips to prompt AI to generate a unique story rich visual novel game
 
 ## Make a new VN Game
 
@@ -41,12 +56,6 @@ A Twine 2 + Harlowe visual novel creation kit.
 - Step #08 - Prompt AI: "Add art assets in my story." (while selected the workflow/4-add-art-assets-into-story.md file) (Skip this if done earlier in step #4)
 - Step #09 - Playtest... and polish the game - and add music assets.
 - Step #10 - Attribute and credit authors appropriately on the Scene Credits scene.
-
-## Add a new Submodule & Commit
-
-1. `git submodule add <repository-url> gallery/modules/<name_with_underscores>`
-2. `git commit -m "add new submodule"`
-3. `git push`
 
 ## Local Development
 
@@ -71,7 +80,7 @@ yarn serve
 Use the project build script to prepare the game set in the package.json 'config.story' for deployment.
 
 ```bash
-yarn build
+yarn build --story ashcroft-manor
 ```
 
 This script runs `node scripts/build.js` and packages the project into the dist folder as (.zip) Itch.io compatible upload
@@ -99,7 +108,7 @@ STORY=ashcroft-manor yarn build
 Process images from the `assets/image/src` directory into pixel art for your stories.
 
 ```bash
-yarn process-images
+yarn process-images --story ashcroft-manor
 ```
 
 This command:
@@ -116,7 +125,7 @@ This command:
 To include background images in processing:
 
 ```bash
-yarn process-images:all
+yarn process-images:all --story ashcroft-manor
 ```
 
 ### Processing Specific Stories
@@ -135,7 +144,6 @@ The image processor automatically resolves story sources the same way as the bui
 
 ### Build Options
 
-- `yarn build` - Build with default story configuration
 - `yarn build --story [name]` - Build specific story
 - `yarn build --strip-only` - Strip URLs without creating zip
 - `yarn build:story` - Build using npm config story setting
@@ -154,7 +162,6 @@ The image processor automatically resolves story sources the same way as the bui
 
 ## Useful Commands
 
-- `yarn build` — build and package the game
 - `yarn serve` — serve the assets locally
 - `ls ~/.cache/huggingface/hub/` - check for downloaded models from hugging face
 - `rm -rf ~/.cache/huggingface/` - remove model generation files to gain back file spaace

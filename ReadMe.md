@@ -64,21 +64,20 @@ Note: pytools/gen-art-anime.py requires the ./models folder to contain the cetus
 
 ## Local Development
 
-1. Clone submodules - `git submodule update --init --recursive --remote`
-2. Serve the repository from `http://127.0.0.1:8080/`.
-3. Install dependencies once if needed:
+1. Serve the repository from `http://127.0.0.1:8080/`.
+2. Install dependencies once if needed:
 
 ```bash
 yarn install
 ```
 
-4. From VS Code or any terminal in this repo, run:
+3. From VS Code or any terminal in this repo, run:
 
 ```bash
 yarn serve
 ```
 
-5. Open the URL in your browser.
+4. Open the URL in your browser.
 
 ## Build & Package
 

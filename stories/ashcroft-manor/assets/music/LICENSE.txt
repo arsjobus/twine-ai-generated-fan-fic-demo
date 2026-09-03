@@ -1,0 +1,61 @@
+## Music License
+
+The music assets in this folder are released under **CC0 1.0 (Public Domain)**
+
+### Included Assets
+
+#### theme-ending-haunted.mp3
+- **Original asset:** Comtemplation
+- **Original creator:** joth
+- **Website:** https://opengameart.org/users/joth
+- **Source:** https://opengameart.org/content/contemplation-0
+- **License:** CC0 1.0 (Public Domain)
+- **License text:** https://creativecommons.org/publicdomain/zero/1.0/
+
+#### theme-ending-pact.mp3
+- **Original asset:** Comtemplation
+- **Original creator:** joth
+- **Website:** https://opengameart.org/users/joth
+- **Source:** https://opengameart.org/content/contemplation-0
+- **License:** CC0 1.0 (Public Domain)
+- **License text:** https://creativecommons.org/publicdomain/zero/1.0/
+
+#### theme-ending-true.mp3
+- **Original asset:** Comtemplation
+- **Original creator:** joth
+- **Website:** https://opengameart.org/users/joth
+- **Source:** https://opengameart.org/content/contemplation-0
+- **License:** CC0 1.0 (Public Domain)
+- **License text:** https://creativecommons.org/publicdomain/zero/1.0/
+
+#### theme-manor-ambient.mp3
+- **Original asset:** Comtemplation
+- **Original creator:** joth
+- **Website:** https://opengameart.org/users/joth
+- **Source:** https://opengameart.org/content/contemplation-0
+- **License:** CC0 1.0 (Public Domain)
+- **License text:** https://creativecommons.org/publicdomain/zero/1.0/
+
+#### theme-seraphine.mp3
+- **Original asset:** Comtemplation
+- **Original creator:** joth
+- **Website:** https://opengameart.org/users/joth
+- **Source:** https://opengameart.org/content/contemplation-0
+- **License:** CC0 1.0 (Public Domain)
+- **License text:** https://creativecommons.org/publicdomain/zero/1.0/
+
+#### theme-shade.mp3
+- **Original asset:** Comtemplation
+- **Original creator:** joth
+- **Website:** https://opengameart.org/users/joth
+- **Source:** https://opengameart.org/content/contemplation-0
+- **License:** CC0 1.0 (Public Domain)
+- **License text:** https://creativecommons.org/publicdomain/zero/1.0/
+
+#### theme-tension.mp3
+- **Original asset:** Comtemplation
+- **Original creator:** joth
+- **Website:** https://opengameart.org/users/joth
+- **Source:** https://opengameart.org/content/contemplation-0
+- **License:** CC0 1.0 (Public Domain)
+- **License text:** https://creativecommons.org/publicdomain/zero/1.0/

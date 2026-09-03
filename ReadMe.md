@@ -2,6 +2,8 @@
 
 A Twine 2 + Harlowe visual novel creation kit.
 
+<img width="100%" src="stage-hands.gif"/>
+
 ## Project Summary
 
 - Engine: Twine 2 (Harlowe 3.x)

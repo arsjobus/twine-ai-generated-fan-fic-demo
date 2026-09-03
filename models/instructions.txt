@@ -1,0 +1,1 @@
+Recommend to keep CheckPoint Model SafeTensor files organized within this folder.

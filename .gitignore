@@ -1,0 +1,13 @@
+.DS_Store
+.lora
+.venv
+node_modules
+build
+dist
+input
+lora/*.safetensors
+models/*.safetensors
+output
+stories/*/assets/image/src/processed
+stories/*/assets/css
+stories/*/assets/scripts

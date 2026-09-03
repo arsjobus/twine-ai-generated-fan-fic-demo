@@ -1,0 +1,35 @@
+{
+  "name": "twine-ai-generated-fan-fic-demo",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "build:story": "node scripts/build.js --story \"$npm_package_config_story\"",
+    "json-to-harlowe": "node scripts/json-to-harlowe.js",
+    "process-images": "node scripts/process-images.js",
+    "process-images:story": "node scripts/process-images.js --story \"$npm_package_config_story\"",
+    "process-images:all": "node scripts/process-images.js --include-backgrounds",
+    "process-images:all:story": "node scripts/process-images.js --include-backgrounds --story \"$npm_package_config_story\"",
+    "strip": "node scripts/build.js --strip-only",
+    "serve": "http-server -c-1 --no-etag -p 8080",
+    "open": "node scripts/open.js",
+    "install-hooks": "git config core.hooksPath .githooks"
+  },
+  "config": {
+    "story": "ashcroft-manor"
+  },
+  "buildConfig": {
+    "name": "ashcroft-manor"
+  },
+  "devDependencies": {
+    "archiver": "^7.0.1",
+    "chokidar-cli": "^3.0.0",
+    "fs-extra": "^11.3.4",
+    "http-server": "^14.1.1",
+    "jsdom": "^29.1.1"
+  }
+}

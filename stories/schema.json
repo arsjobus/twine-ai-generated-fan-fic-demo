@@ -1,0 +1,156 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "creator": {
+      "type": "string",
+      "minLength": 1
+    },
+    "creatorVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "schema": {
+      "type": "string",
+      "minLength": 1
+    },
+    "schemaVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "uuid": {
+      "type": "string",
+      "minLength": 1
+    },
+    "passages": {
+      "type": "array",
+      "uniqueItems": true,
+      "minItems": 1,
+      "items": {
+        "required": [
+          "name",
+          "tags",
+          "id",
+          "text",
+          "cleanText"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "tags": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "actor1ImageSrc": {
+            "type": "string",
+            "minLength": 1
+          },
+          "actor1ArtPromptPositive": {
+            "type": "string",
+            "minLength": 1
+          },
+          "actor1ArtPromptNegative": {
+            "type": "string",
+            "minLength": 1
+          },
+          "actor2ImageSrc": {
+            "type": "string",
+            "minLength": 1
+          },
+          "actor2ArtPromptPositive": {
+            "type": "string",
+            "minLength": 1
+          },
+          "actor2ArtPromptNegative": {
+            "type": "string",
+            "minLength": 1
+          },
+          "actor3ImageSrc": {
+            "type": "string",
+            "minLength": 1
+          },
+          "actor3ArtPromptPositive": {
+            "type": "string",
+            "minLength": 1
+          },
+          "actor3ArtPromptNegative": {
+            "type": "string",
+            "minLength": 1 
+          },
+          "backgroundImageSrc": {
+            "type": "string",
+            "minLength": 1
+          },
+          "backgroundArtPromptPositive": {
+            "type": "string",
+            "minLength": 1
+          },
+          "backgroundArtPromptNegative": {
+            "type": "string",
+            "minLength": 1
+          },
+          "links": {
+            "type": "array",
+            "uniqueItems": true,
+            "minItems": 1,
+            "items": {
+              "required": [
+                "linkText",
+                "passageName",
+                "original"
+              ],
+              "properties": {
+                "linkText": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "passageName": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "original": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          },
+          "hooks": {
+            "type": "array",
+            "items": {
+              "required": [],
+              "properties": {}
+            }
+          },
+          "cleanText": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "name",
+    "creator",
+    "creatorVersion",
+    "schema",
+    "schemaVersion",
+    "uuid",
+    "passages"
+  ]
+}

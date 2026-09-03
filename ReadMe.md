@@ -2,8 +2,6 @@
 
 A Twine 2 + Harlowe visual novel creation kit.
 
-<img width="100%" src="stage-hands.gif"/>
-
 ## Project Summary
 
 - Engine: Twine 2 (Harlowe 3.x)
@@ -11,6 +9,8 @@ A Twine 2 + Harlowe visual novel creation kit.
 - Open command: `yarn open --story {story-name}` (requires running http server with `yarn serve` in the background).
 - Build command: `yarn build --story {story-name}`
 - Deployment target: itch.io compatible web package (.zip)
+
+<img width="100%" src="stage-hands.gif"/>
 
 ## Requirements
 

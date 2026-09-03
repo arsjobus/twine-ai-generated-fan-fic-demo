@@ -165,8 +165,7 @@ python pytools/gen-art-anime.py "anime portrait of a mysterious manor character"
 ```
 
 The script expects the base model at `models/cetusMix_Coda2.safetensors`. LoRA files are
-looked up in `lora/` when the prompt contains their trigger word, such as `pixel`,
-`vados`, `android 18`, `bulma`, or `sticker`. Missing LoRA files are skipped automatically.
+looked up in `lora/` when the prompt contains their trigger word, such as `pixel`. Missing LoRA files are skipped automatically.
 
 Typical folder layout:
 

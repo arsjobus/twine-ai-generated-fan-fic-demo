@@ -147,7 +147,6 @@ The image processor automatically resolves story sources the same way as the bui
 - `yarn build --story [name]` - Build specific story
 - `yarn build --strip-only` - Strip URLs without creating zip
 - `yarn build:story` - Build using npm config story setting
-- `yarn process-images` - Process character images for default story
 - `yarn process-images --story [name]` - Process character images for specific story
 - `yarn process-images:story` - Process character images using npm config story setting
 - `yarn process-images:all` - Process all images (including backgrounds) for default story

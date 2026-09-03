@@ -1,1 +1,9 @@
 Recommend to keep LoRA SafeTensor files organized within this folder.
+
+Download from Civitai: https://civitai.com/models/44960/mpixel
+
+Download and place pixel_f2 safetensor file into this folder with it named exactly:
+
+pixel_f2.safetensors
+
+NOTE: Be sure to read the terms and conditions well to use this model for "commerical usage"

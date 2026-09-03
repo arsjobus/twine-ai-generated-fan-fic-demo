@@ -145,6 +145,35 @@ yarn process-images:all:story  # including backgrounds
 
 The image processor automatically resolves story sources the same way as the build system.
 
+## AI Image Generation
+
+From the repository root, activate the Python virtual environment and run:
+
+```bash
+python pytools/gen-art-anime.py "anime portrait of a mysterious manor character" \
+	--image-name manor-character \
+	--width 512 \
+	--height 768 \
+	--seed 1234 \
+	--count 1
+```
+
+The script expects the base model at `models/cetusMix_Coda2.safetensors`. LoRA files are
+looked up in `.lora/` when the prompt contains their trigger word, such as `pixel`,
+`vados`, `android 18`, `bulma`, or `sticker`. Missing LoRA files are skipped automatically.
+
+Available options:
+
+- `--negative "text"` - Add a custom negative prompt
+- `--image-name NAME` - Set the output filename base
+- `--width WIDTH` - Set the image width (default `512`)
+- `--height HEIGHT` - Set the image height (default `768`)
+- `--count NUMBER` - Generate multiple images (default `1`)
+- `--seed NUMBER` - Use a reproducible seed
+- `--hires` - Run the two-pass hires fix
+
+Generated images are saved to `output/`.
+
 ### Build Options
 
 - `yarn build --story [name]` - Build specific story

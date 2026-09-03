@@ -1,1 +1,7 @@
-Recommend to keep CheckPoint Model SafeTensor files organized within this folder.
+Download from Civitai: https://civitai.com/models/6755/cetus-mix?modelVersionId=48569
+
+Download and place CetusMix_Coda2 safetensor file into this folder with it named exactly:
+
+cetusMix_Coda2.safetensors
+
+NOTE: Be sure to read the terms and conditions well to use this model for "commerical usage"

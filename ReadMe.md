@@ -12,17 +12,20 @@ A Twine 2 + Harlowe visual novel creation kit.
 
 ## Requirements
 
-- Python 3
-- Node v26
+- Twine 2 (https://twinery.org/)
+- Python 3 (https://www.python.org/downloads/)
+- Node v26 (https://nodejs.org/en/download)
 
 ## Quick Start
 
-1) Install Yarn (npm install yarn -g)
-2) Install node deps: `yarn install`
+1) Install Yarn `npm install yarn -g`
+2) Use Yarn to install NPM deps from the package.json file: `yarn install`
 3) Make Python venv: `python -m venv .venv`
 4) Activate Python venv: `. .venv/bin/activate`
 5) Install Python deps: `pip install -r requirements.txt`
 6) Can proceed to use most commands specified in remainder of this readme.md doc.
+
+Note: pytools/gen-art-anime.py requires the ./models folder to contain the cetus-mix safetensor model, but remember that checkpoint model cannot be used to generate images for commercial purposes!
 
 ## Folder Structure
 

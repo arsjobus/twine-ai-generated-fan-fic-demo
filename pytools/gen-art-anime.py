@@ -1,5 +1,6 @@
 import sys
 import random
+import os
 import torch
 from diffusers import (
     StableDiffusionPipeline,
@@ -60,6 +61,10 @@ def load_kohya_lora(pipe, lora_path, alpha=0.5):
     """
     Manually load a Kohya/A1111-format LoRA into a diffusers pipeline.
     """
+
+    if not os.path.isfile(lora_path):
+        print(f"LoRA file not found, skipping: {lora_path}")
+        return
 
     state_dict = load_file(lora_path)
     visited = set()
@@ -147,6 +152,10 @@ def load_kohya_lora_additive(pipe, lora_path, alpha=0.5):
     Load a Kohya/A1111-format LoRA into a diffusers pipeline with additive blending.
     Multiple LoRAs can be applied sequentially and will sum their effects.
     """
+    if not os.path.isfile(lora_path):
+        print(f"LoRA file not found, skipping: {lora_path}")
+        return
+
     state_dict = load_file(lora_path)
 
     for key in state_dict:
